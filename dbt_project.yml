@@ -1,6 +1,5 @@
-
-name: 'my_new_project'
-version: '1.0.0'
+name: "my_new_project"
+version: "1.0.0"
 config-version: 2
 
 # These configurations specify where dbt should look for different types of files.
@@ -9,5 +8,3 @@ config-version: 2
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
-
-

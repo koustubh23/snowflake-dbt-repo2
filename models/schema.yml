@@ -9,3 +9,12 @@ models:
         tests:
           #  - unique
           - not_null
+
+  - name: dim_customer
+    description: "Main Orders table raw"
+    columns:
+      - name: CUSTOMER_ID
+        description: "Primary Key"
+        tests:
+          - unique
+          - not_null
