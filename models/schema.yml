@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: VW_ORDERS
+    description: "Main Orders table raw"
+    columns:
+      - name: ORDER_ID
+        description: "Composite Key"
+        tests:
+          #  - unique
+          - not_null
