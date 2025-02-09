@@ -1,1 +1,1 @@
-SELECT * FROM DR_STAGE.PUBLIC.ORDERS
+SELECT * FROM  {{source("sales","ORDERS")}}

@@ -1,8 +1,18 @@
 version: 2
 
+sources:
+  - name: sales
+    database: DR_STAGE
+    schema: PUBLIC
+    tables:
+      - name: ORDERS
+
+    
 models:
   - name: VW_ORDERS
     description: "Main Orders table raw"
+    config:
+      materialized: 'table'
     columns:
       - name: ORDER_ID
         description: "Composite Key"
@@ -11,7 +21,9 @@ models:
           - not_null
 
   - name: dim_customer
-    description: "Main Orders table raw"
+    description: "RI Check on dim_customer"
+    config:
+      materialized: 'view'
     columns:
       - name: CUSTOMER_ID
         description: "Primary Key"
