@@ -6,6 +6,7 @@ sources:
     schema: PUBLIC
     tables:
       - name: ORDERS
+      - name: DIM_PRODUCTS
 
 models:
   - name: VW_ORDERS
