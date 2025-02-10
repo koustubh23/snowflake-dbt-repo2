@@ -1,3 +1,3 @@
 SELECT * FROM  {{source("sales","DIM_PRODUCTS")}}
 UNION 
-SELECT '-1','1889-01-01' 
+SELECT '-3','1889-01-02' 
