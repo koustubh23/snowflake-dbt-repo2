@@ -7,12 +7,11 @@ sources:
     tables:
       - name: ORDERS
 
-    
 models:
   - name: VW_ORDERS
     description: "Main Orders table raw"
     config:
-      materialized: 'table'
+      materialized: "table"
     columns:
       - name: ORDER_ID
         description: "Composite Key"
@@ -23,7 +22,7 @@ models:
   - name: dim_customer
     description: "RI Check on dim_customer"
     config:
-      materialized: 'view'
+      materialized: "view"
     columns:
       - name: CUSTOMER_ID
         description: "Primary Key"
