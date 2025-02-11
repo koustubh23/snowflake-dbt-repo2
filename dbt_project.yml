@@ -8,6 +8,7 @@ config-version: 2
 test-paths: ["tests"]
 analysis-paths: ["analysis"]
 macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
 model-paths: ["models"]
 
 models:

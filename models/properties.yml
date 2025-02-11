@@ -7,6 +7,7 @@ sources:
     tables:
       - name: ORDERS
       - name: DIM_PRODUCTS
+      - name: PAN_INFO
 
 models:
   - name: VW_ORDERS
