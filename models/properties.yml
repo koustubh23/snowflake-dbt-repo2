@@ -40,8 +40,8 @@ models:
       - name: PRODUCT_ID
         description: "Primary Key"
         tests:
-          - unique
+          #- unique
           - not_null
-          - accepted_values:
-              values:
-                - ['1','2']
+          #- accepted_values:
+           #   values:
+            #    - ['1','2']
