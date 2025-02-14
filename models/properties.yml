@@ -31,3 +31,17 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: dim_products_dbt
+    description: "tests on dim_product"
+    config:
+      materialized: "table"
+    columns:
+      - name: PRODUCT_ID
+        description: "Primary Key"
+        tests:
+          #- unique
+          - not_null
+          #- accepted_values:
+           #   values:
+            #    - ['1','2']
