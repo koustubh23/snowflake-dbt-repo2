@@ -39,7 +39,7 @@ models:
     columns:
       - name: PRODUCT_ID
         description: "Primary Key"
-        tests:
+        #tests:
           #- unique
           #- not_null
           #- accepted_values:
